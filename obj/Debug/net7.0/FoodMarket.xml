@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FoodMarket</name>
+    </assembly>
+    <members>
+        <member name="T:FoodMarket.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FoodMarket.Migrations.ModifyUserTable">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.ModifyUserTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.ModifyUserTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.ModifyUserTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FoodMarket.Migrations.SetWishList">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.SetWishList.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.SetWishList.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.SetWishList.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FoodMarket.Migrations.AddWishListItem">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.AddWishListItem.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.AddWishListItem.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.AddWishListItem.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FoodMarket.Migrations.AddWishListItemTable">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.AddWishListItemTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.AddWishListItemTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.AddWishListItemTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FoodMarket.Migrations.SetRelations">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.SetRelations.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.SetRelations.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.SetRelations.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FoodMarket.Migrations.AddCustomerColumnPurchase">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.AddCustomerColumnPurchase.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.AddCustomerColumnPurchase.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.AddCustomerColumnPurchase.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:FoodMarket.Migrations.ChangeIDColumn">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.ChangeIDColumn.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.ChangeIDColumn.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Migrations.ChangeIDColumn.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodMarket.Pages.Categories.CategoriesController.AddProduct(FoodMarket.Pages.Categories.Dto.ProductCategoryDto)">
+            <summary>
+            add a product to a specific category 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+            <response code="200">product was successfully assigned to category</response>
+            <response code="400">Unable to assign product to category due to validation error</response>
+        </member>
+        <member name="M:FoodMarket.Pages.Categories.CategoriesController.AddCategory(FoodMarket.Pages.Categories.Dto.CreateCategoryDto)">
+            <summary>
+            add a new category in DBase
+            </summary>
+            <param name="category"></param>
+            <returns></returns>
+            <response code="200">category was successfully added in DBase </response>
+            <response code="400">Unable to create category to category due to validation error</response>
+        </member>
+        <member name="M:FoodMarket.Pages.Categories.CategoriesController.DeleteCategory(System.Int32)">
+            <summary>
+            delete a new category from DBase
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="200">category was successfully deleted from DBase </response>
+            <response code="404">specified category was not found or does not exist</response>
+        </member>
+        <member name="M:FoodMarket.Pages.Categories.CategoriesController.EditCategory(System.Int32,FoodMarket.Pages.Categories.Dto.EditCategoryDto)">
+            <summary>
+            edit existing category
+            </summary>
+            <param name="id"></param>
+            <param name="category"></param>
+            <returns></returns>
+            <response code="200">category was successfully edited </response>
+            <response code="400">Unable to edit category to category due to validation error</response>
+        </member>
+        <member name="M:FoodMarket.Pages.Categories.CategoriesController.GetAll">
+            <summary>
+            get all categories from DBase
+            </summary>
+            <returns></returns>
+            <response code="200">all list of categories was successfully displayed </response>
+            <response code="404">there were no categories in DBase</response>
+        </member>
+        <member name="M:FoodMarket.Pages.Categories.CategoriesController.GetCategory(System.Int32)">
+            <summary>
+            get a specific category from DBase
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="200">the category was successfully displayed </response>
+            <response code="404">there is no category with such id in DBase</response>
+        </member>
+        <member name="M:FoodMarket.Pages.Products.ProductsController.AddProduct(FoodMarket.Pages.Products.Dto.CreateProductDto)">
+            <summary>
+            add a new product in DBase
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+            <response code="200">the product was successfully added in DBase </response>
+            <response code="400">Unable to add product due to validation error or an product with such name already exist</response>
+        </member>
+        <member name="M:FoodMarket.Pages.Products.ProductsController.DeleteProduct(System.Int32)">
+            <summary>
+            delete a existing product from DBase
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="200">the product was successfully deleted from DBase </response>
+            <response code="404">specified product was not found or does not exist</response>
+        </member>
+        <member name="M:FoodMarket.Pages.Products.ProductsController.EditProduct(System.Int32,FoodMarket.Pages.Products.Dto.EditProductDto)">
+            <summary>
+            edit a existing product from DBase
+            </summary>
+            <param name="id"></param>
+            <param name="product"></param>
+            <returns></returns>
+            <response code="200">product was successfully edited </response>
+            <response code="400">Unable to edit product to category due to validation error</response>
+        </member>
+        <member name="M:FoodMarket.Pages.Products.ProductsController.GetAll">
+            <summary>
+            get all products from DBase
+            </summary>
+            <response code="200">all list of products was successfully displayed </response>
+            <response code="404">there were no products in DBase</response>
+        </member>
+        <member name="M:FoodMarket.Pages.Products.ProductsController.GetProduct(System.Int32)">
+            <summary>
+            get a specific product from DBase
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="200">the product was successfully displayed </response>
+            <response code="404">there is no product with such id in DBase</response>
+        </member>
+        <member name="M:FoodMarket.Pages.User.UserController.Login(FoodMarket.Pages.User.Dto.LoginUser)">
+            <summary>
+            login in system
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+            <response code="200">the user logged successfully and token was generated </response>
+            <response code="500">login failed due to validation errors</response>
+        </member>
+        <member name="M:FoodMarket.Pages.User.UserController.AddRole(FoodMarket.Pages.User.Dto.RoleDto)">
+            <summary>
+            add a new role for users
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+            <response code="200">the role was successfully added in DBase </response>
+            <response code="500">Unable to add role due to validation error</response>
+        </member>
+        <member name="M:FoodMarket.Pages.User.UserController.AddRole(FoodMarket.Pages.User.Dto.UserRoleDto)">
+            <summary>
+            assign a role to a user 
+            </summary>
+            <param name="userRole"></param>
+            <returns></returns>
+            <response code="200">the role was successfully assigned to user </response>
+            <response code="400">Unable to assign role due to validation error</response>
+            
+        </member>
+        <member name="M:FoodMarket.Pages.User.UserController.Register(FoodMarket.Pages.User.Dto.RegisterUser)">
+            <summary>
+            register a new user in system
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FoodMarket.Pages.WishListItems.WishListsController.AddProductToWishList(FoodMarket.Pages.WishListItems.Dto.WishListProductDto)">
+            <summary>
+            add a new product in wish list
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:FoodMarket.Pages.WishListItems.WishListsController.DeleteProductToWishList(FoodMarket.Pages.WishListItems.Dto.WishListProductDto)">
+            <summary>
+            delete a quantity of product from wishlist
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FoodMarket.Pages.WishLists.WishListsController.Get">
+            <summary>
+            get user wishList
+            </summary>
+            <response code="200">the wish list was successfully displayed </response>
+            <response code="400">Unable to get wish list or it does not exist</response>
+        </member>
+        <member name="M:FoodMarket.Pages.WishLists.WishListsController.GetAllWishLists">
+             <summary>
+             get all users wish lists
+             </summary>
+             <returns></returns>
+            <response code="200">the wish lists was successfully displayed </response>
+             <response code="400">Unable to get wish lists or the list is empty</response>
+        </member>
+        <member name="M:FoodMarket.Pages.WishLists.WishListsController.GetWishListById(System.String)">
+            <summary>
+            get an specific user wish list
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="200">the wish list was successfully displayed </response>
+            <response code="400">Unable to get wish list or it does not exist</response>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,20 @@
+{
+  "email": "admin@example.com",
+  "password": "123456789aA_",
+  "rememberMe": false
+}
+{
+  "email": "manager@example.com",
+  "password": "123456789aA_",
+  "rememberMe": false
+}
+{
+  "email": "user@example.com",
+  "password": "123456789aA_",
+  "rememberMe": false
+}
+{
+  "email": "user2@example.com",
+  "password": "123456789aA_",
+  "rememberMe": false
+}
